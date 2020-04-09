@@ -6,7 +6,7 @@ def github_id = 'CHANGEME'
 
 def namespace = github_id.toLowerCase()
 def git_commit     = ''
-def image_name     = "sepractices/${github_id}-account-service"
+def image_name     = "sepractices/${namespace}-account-service"
 def cluster_name   = 'prod-ak-k8s-cluster'
 def git_repository = "https://github.com/${github_id}/account-service.git"
 def kaniko_image = 'gcr.io/kaniko-project/executor:debug-b0e7c0e8cd07ef3ad2b7181e0779af9fcb312f0b'
